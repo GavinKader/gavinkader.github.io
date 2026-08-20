@@ -237,14 +237,14 @@ body {
 }
 
 .image-frame {
-    padding: 6px;
-    background: rgba(255, 255, 255, 0.2);
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
-    border-radius: 50%; /* Make frame oval */
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     box-shadow: var(--shadow-lg);
-    width: 420px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
 }
 
 .profile-img {
@@ -552,8 +552,8 @@ body {
     }
 
     .image-frame {
-        width: 300px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
     }
 
     .grid-2 {

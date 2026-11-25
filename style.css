@@ -307,6 +307,51 @@ body {
 }
 
 /* ==========================================================================
+   Collapsible "Other" Research Section
+   ========================================================================== */
+.other-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+    padding-bottom: 0;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.other-summary::-webkit-details-marker {
+    display: none;
+}
+
+.other-summary:hover h3 {
+    color: var(--accent-hover);
+}
+
+.other-details[open] .other-summary {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom-color: rgba(107, 33, 168, 0.15);
+}
+
+.other-toggle-icon {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    transform: rotate(45deg);
+    transition: transform 0.25s ease;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+.other-details[open] .other-toggle-icon {
+    transform: rotate(-135deg);
+}
+
+/* ==========================================================================
    Research Paper Items
    ========================================================================== */
 .paper-list {
